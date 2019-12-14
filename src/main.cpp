@@ -89,14 +89,7 @@ void setup()
       blinkLed(1);
     }
   }
-
-  // if (!SD.begin(4))
-  // {
-  //   while (true)
-  //   {
-  //    blinkLed(2);
-  //   }  
-  // }
+  
   if(!SD.exists("dati.txt"))
   {
     while (true)

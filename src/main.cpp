@@ -20,14 +20,14 @@
 #define BME_MISO 12
 #define BME_MOSI 11
 #define BME_CS 10
-
+#define FILE_NAME "dati.txt"
 
 
 
 //COSTANTI---------------------------
 Adafruit_BME280 bme280;
 RTC_DS1307 rtc;
-File FileDati = SD.open("dati.txt", FILE_WRITE);
+File FileDati = SD.open(FILE_NAME, FILE_WRITE);
 int pinLed    = 6;
 int pinFan    = 5;
 int pinDust   = 8;
